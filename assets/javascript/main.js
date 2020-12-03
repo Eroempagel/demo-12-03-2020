@@ -64,6 +64,7 @@ function charFreq(message) {
 }
 */
 
+/*
 // Ziiiiip!
 function zipObject(keys, values){
     let zip = {};
@@ -71,10 +72,15 @@ function zipObject(keys, values){
         for(let i = 0; i < keys.length; i++) {
             if (Array.isArray(values)){
                 zip[keys[i]] = values[i]
+            } else if (Array.isArray(keys[i])){
+                zip[keys[i][0]] = keys[i][1];
+                console.log(keys[i][0], keys[i][1])
             } else {
-
+                zip[keys[i]] = undefined;
             }
         }
-        return zip;
+        
     }
+    return zip;
 }
+*/
